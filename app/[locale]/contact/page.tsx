@@ -309,12 +309,18 @@ export default function ContactPage() {
                   - Custom API route: use a React onSubmit handler
               */}
               <form
-                action="mailto:hello@bgeraser.com"
-                method="get"
-                encType="text/plain"
+                action="https://formsubmit.co/contactmesolution14@gmail.com"
+                method="POST"
                 className="space-y-4"
                 aria-label="Contact form"
               >
+                {/* Hidden field to set the email subject line */}
+                <input type="hidden" name="_subject" value="New Contact Form Submission - BgEraser" />
+                
+                {/* (Optional) Hidden field to disable recaptcha if you want a frictionless experience, 
+                    but we leave it on by default to prevent spam.
+                    <input type="hidden" name="_captcha" value="false" /> 
+                */}
                 {/* Name */}
                 <div>
                   <label
