@@ -239,8 +239,8 @@ export default function ContactPage() {
                       </svg>
                     ),
                     label: "General Enquiries",
-                    value: "hello@bgeraser.com",
-                    href: "mailto:hello@bgeraser.com",
+                    value: "contactmesolution14@gmail.com",
+                    href: "mailto:contactmesolution14@gmail.com",
                   },
                   {
                     icon: (
@@ -250,8 +250,8 @@ export default function ContactPage() {
                       </svg>
                     ),
                     label: "Privacy & Data Rights",
-                    value: "privacy@bgeraser.com",
-                    href: "mailto:privacy@bgeraser.com",
+                    value: "contactmesolution14@gmail.com",
+                    href: "mailto:contactmesolution14@gmail.com",
                   },
                   {
                     icon: (
@@ -264,8 +264,8 @@ export default function ContactPage() {
                       </svg>
                     ),
                     label: "Legal & Terms",
-                    value: "legal@bgeraser.com",
-                    href: "mailto:legal@bgeraser.com",
+                    value: "contactmesolution14@gmail.com",
+                    href: "mailto:contactmesolution14@gmail.com",
                   },
                 ].map(({ icon, label, value, href }) => (
                   <a
@@ -442,8 +442,8 @@ export default function ContactPage() {
             </h2>
             <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto text-sm md:text-base">
               Can&apos;t find what you&apos;re looking for? Email us at{" "}
-              <a href="mailto:hello@bgeraser.com" className="text-brand-600 hover:underline font-medium">
-                hello@bgeraser.com
+              <a href="mailto:contactmesolution14@gmail.com" className="text-brand-600 hover:underline font-medium">
+                contactmesolution14@gmail.com
               </a>
               .
             </p>
