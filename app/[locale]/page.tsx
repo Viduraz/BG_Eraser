@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import AdBanner from "@/components/AdBanner";
 import BackgroundRemover from "@/components/BackgroundRemover";
+import {useTranslations} from 'next-intl';
 
 export const metadata: Metadata = {
   title: "Free AI Background Remover – Instant, Private, No Watermark",
@@ -134,6 +135,7 @@ const useCases = [
 ];
 
 export default function HomePage() {
+  const t = useTranslations('HomePage');
   return (
     <>
       {/* ── HERO SECTION ─────────────────────────────────────────────────── */}
@@ -163,16 +165,13 @@ export default function HomePage() {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
-              Remove Image Backgrounds{" "}
-              <span className="gradient-text">Instantly with AI</span>
+              {t('hero_title_prefix')}{" "}
+              <span className="gradient-text">{t('hero_title_highlight')}</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Powered by on-device AI — your photos{" "}
-              <strong className="text-slate-800 dark:text-white">never leave your browser</strong>. Get
-              crisp transparent PNGs in under 3 seconds. Completely free, no watermark,
-              no account.
+              {t('hero_subtitle')}
             </p>
 
             {/* CTA Buttons */}
@@ -181,13 +180,13 @@ export default function HomePage() {
                 href="#tool"
                 className="w-full sm:w-auto px-8 py-3.5 rounded-xl text-base font-semibold text-white gradient-brand hover:opacity-90 hover:shadow-lg transition-all duration-200 shadow-md"
               >
-                Remove Background Free →
+                {t('upload_button')}
               </a>
               <a
                 href="#how-it-works"
                 className="w-full sm:w-auto px-8 py-3.5 rounded-xl text-base font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-sm transition-all duration-200"
               >
-                How It Works
+                {t('how_it_works_button')}
               </a>
             </div>
 
