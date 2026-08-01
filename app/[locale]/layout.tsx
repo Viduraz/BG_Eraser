@@ -19,33 +19,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "EraseImageBg – Free AI Background Remover | Instant & Private",
-    template: "%s | EraseImageBg",
-  },
-  description:
-    "Remove image backgrounds instantly with our free AI-powered tool. 100% private — processing happens in your browser. No upload, no account, no watermark. Perfect for e-commerce, design, and social media.",
-  keywords: [
-    "background remover",
-    "remove background",
-    "AI background removal",
-    "free background remover",
-    "online background eraser",
-    "transparent background",
-    "background remover no watermark",
-    "background remover UK",
-    "background remover US",
-  ],
+  title: 'EraseImageBg | Free AI Image Background Remover',
+  description: 'Remove backgrounds from your images automatically in seconds with AI. 100% free, fast, and high-quality background eraser.',
+  keywords: ['erase image bg', 'background remover', 'remove bg', 'free ai tool', 'transparent background maker'],
   authors: [{ name: "EraseImageBg" }],
   creator: "EraseImageBg",
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://eraseimagebg.com",
-    siteName: "EraseImageBg",
-    title: "EraseImageBg – Free AI Background Remover",
-    description:
-      "Instantly remove image backgrounds with AI. 100% private browser-based processing. No sign-up required.",
+    title: 'EraseImageBg - Remove Backgrounds Instantly',
+    description: 'Create transparent backgrounds automatically in seconds. Try it for free!',
+    url: 'https://www.eraseimagebg.com',
+    siteName: 'EraseImageBg',
+    type: 'website',
   },
   twitter: {
     card: "summary_large_image",
@@ -57,7 +41,7 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
-  metadataBase: new URL("https://eraseimagebg.com"),
+  metadataBase: new URL("https://www.eraseimagebg.com"),
 };
 
 // ── AdSense publisher ID ───────────────────────────────────────────────────
