@@ -155,7 +155,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 md:pt-24 md:pb-28">
           <div className="text-center max-w-4xl mx-auto animate-fade-in-up">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass border border-white/60 text-brand-700 text-sm font-semibold mb-8 shadow-sm">
+            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass border border-white/60 dark:border-white/10 text-brand-700 dark:text-brand-300 text-sm font-semibold mb-8 shadow-sm">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-500"></span>
@@ -184,18 +184,18 @@ export default function HomePage() {
               </a>
               <a
                 href="#how-it-works"
-                className="w-full sm:w-auto px-8 py-4 rounded-2xl text-lg font-bold text-slate-700 dark:text-slate-200 glass border border-white/50 hover:bg-white/60 transition-all duration-300 shadow-sm"
+                className="w-full sm:w-auto px-8 py-4 rounded-2xl text-lg font-bold text-slate-800 dark:text-slate-200 glass border border-white/50 dark:border-white/10 hover:bg-white/60 dark:hover:bg-slate-800/80 transition-all duration-300 shadow-sm"
               >
                 {t('how_it_works_button')}
               </a>
             </div>
 
             {/* Stats bar */}
-            <div className="inline-flex flex-wrap justify-center gap-x-12 gap-y-6 glass rounded-3xl px-10 py-6 border border-white/60 shadow-sm">
+            <div className="inline-flex flex-wrap justify-center gap-x-12 gap-y-6 glass rounded-3xl px-10 py-6 border border-white/60 dark:border-white/10 shadow-sm">
               {stats.map(({ value, label }) => (
                 <div key={label} className="text-center">
-                  <div className="text-2xl font-black text-slate-800 dark:text-white">{value}</div>
-                  <div className="text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">{label}</div>
+                  <div className="text-2xl font-black text-slate-900 dark:text-white">{value}</div>
+                  <div className="text-sm font-medium text-slate-600 dark:text-slate-400 mt-1">{label}</div>
                 </div>
               ))}
             </div>

@@ -71,6 +71,9 @@ body {
 .gradient-hero {
   background: linear-gradient(160deg, #f0f4ff 0%, #e0eaff 30%, #f5f3ff 70%, #fdf4ff 100%);
 }
+.dark .gradient-hero {
+  background: linear-gradient(160deg, #020617 0%, #0f172a 40%, #1e1b4b 100%);
+}
 
 /* ── Glass Effect ───────────────────────────────────────────────────────── */
 .glass {
@@ -78,6 +81,10 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.dark .glass {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* ── Animations ─────────────────────────────────────────────────────────── */
