@@ -91,7 +91,7 @@ export default async function RootLayout({
     <html lang={locale} className={`${inter.variable} h-full`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300">
         <NextIntlClientProvider messages={messages}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

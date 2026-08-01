@@ -153,49 +153,49 @@ export default function HomePage() {
         />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 md:pt-24 md:pb-28">
-          <div className="text-center max-w-4xl mx-auto">
+          <div className="text-center max-w-4xl mx-auto animate-fade-in-up">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-50 border border-brand-100 text-brand-700 text-sm font-medium mb-6">
-              <span className="relative flex h-2 w-2">
+            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass border border-white/60 text-brand-700 text-sm font-semibold mb-8 shadow-sm">
+              <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-500"></span>
               </span>
               Free · Private · No Sign-Up Required
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight drop-shadow-sm">
               {t('hero_title_prefix')}{" "}
               <span className="gradient-text">{t('hero_title_highlight')}</span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
               {t('hero_subtitle')}
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
               <a
                 href="#tool"
-                className="w-full sm:w-auto px-8 py-3.5 rounded-xl text-base font-semibold text-white gradient-brand hover:opacity-90 hover:shadow-lg transition-all duration-200 shadow-md"
+                className="w-full sm:w-auto px-8 py-4 rounded-2xl text-lg font-bold text-white gradient-brand hover:scale-105 hover:shadow-xl transition-all duration-300 shadow-lg"
               >
                 {t('upload_button')}
               </a>
               <a
                 href="#how-it-works"
-                className="w-full sm:w-auto px-8 py-3.5 rounded-xl text-base font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-sm transition-all duration-200"
+                className="w-full sm:w-auto px-8 py-4 rounded-2xl text-lg font-bold text-slate-700 dark:text-slate-200 glass border border-white/50 hover:bg-white/60 transition-all duration-300 shadow-sm"
               >
                 {t('how_it_works_button')}
               </a>
             </div>
 
             {/* Stats bar */}
-            <div className="inline-flex flex-wrap justify-center gap-x-8 gap-y-4 glass rounded-2xl px-6 py-4 border border-slate-200/60 dark:border-slate-700/60 dark:bg-slate-900/50">
+            <div className="inline-flex flex-wrap justify-center gap-x-12 gap-y-6 glass rounded-3xl px-10 py-6 border border-white/60 shadow-sm">
               {stats.map(({ value, label }) => (
                 <div key={label} className="text-center">
-                  <div className="text-xl font-bold gradient-text">{value}</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{label}</div>
+                  <div className="text-2xl font-black text-slate-800 dark:text-white">{value}</div>
+                  <div className="text-sm font-medium text-slate-500 dark:text-slate-400 mt-1">{label}</div>
                 </div>
               ))}
             </div>
