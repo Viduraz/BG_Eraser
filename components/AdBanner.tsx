@@ -74,7 +74,7 @@ export default function AdBanner({
     try {
       // adsbygoogle may be undefined if the script hasn't loaded yet
       // or if an ad blocker removed it.
-      const adsByGoogle = (window as Window & { adsbygoogle?: unknown[] }).adsbygoogle;
+      const adsByGoogle = (window as any).adsbygoogle;
       if (adsByGoogle === undefined) {
         // Script not loaded or blocked — show placeholder
         setAdBlocked(true);
