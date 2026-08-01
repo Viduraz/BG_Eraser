@@ -76,7 +76,7 @@ export default function CookieBanner() {
       />
 
       {/* Banner card */}
-      <div className="relative bg-white/95 backdrop-blur-md border-t border-slate-200 shadow-xl">
+      <div className="relative bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 shadow-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-5">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
 
@@ -90,14 +90,14 @@ export default function CookieBanner() {
 
             {/* Text */}
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-slate-800 mb-0.5">
+              <p className="text-sm font-semibold text-slate-800 dark:text-white mb-0.5">
                 We value your privacy
               </p>
-              <p className="text-xs text-slate-500 leading-relaxed">
+              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                 We use cookies to display relevant advertising via{" "}
-                <strong className="font-medium text-slate-600">Google AdSense</strong>{" "}
+                <strong className="font-medium text-slate-600 dark:text-slate-300">Google AdSense</strong>{" "}
                 (including the DoubleClick DART cookie). Your images are{" "}
-                <strong className="font-medium text-slate-600">always processed locally</strong>{" "}
+                <strong className="font-medium text-slate-600 dark:text-slate-300">always processed locally</strong>{" "}
                 — never uploaded. Accepting enables personalised ads that keep this tool free.{" "}
                 <Link
                   href="/privacy-policy"
@@ -112,7 +112,7 @@ export default function CookieBanner() {
             <div className="flex items-center gap-2.5 flex-shrink-0 w-full sm:w-auto">
               <button
                 onClick={handleDecline}
-                className="flex-1 sm:flex-initial px-4 py-2 rounded-lg text-xs font-medium text-slate-600 bg-slate-100 hover:bg-slate-200 active:scale-95 transition-all duration-150 whitespace-nowrap"
+                className="flex-1 sm:flex-initial px-4 py-2 rounded-lg text-xs font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 active:scale-95 transition-all duration-150 whitespace-nowrap"
                 aria-label="Decline optional cookies"
               >
                 Decline
@@ -129,7 +129,7 @@ export default function CookieBanner() {
             {/* Close ×  (same as decline) */}
             <button
               onClick={handleDecline}
-              className="absolute top-3 right-3 sm:static sm:flex-shrink-0 p-1 rounded-md text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
+              className="absolute top-3 right-3 sm:static sm:flex-shrink-0 p-1 rounded-md text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               aria-label="Close cookie banner"
             >
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden="true">

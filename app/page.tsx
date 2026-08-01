@@ -162,15 +162,15 @@ export default function HomePage() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
               Remove Image Backgrounds{" "}
               <span className="gradient-text">Instantly with AI</span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
               Powered by on-device AI — your photos{" "}
-              <strong className="text-slate-800">never leave your browser</strong>. Get
+              <strong className="text-slate-800 dark:text-white">never leave your browser</strong>. Get
               crisp transparent PNGs in under 3 seconds. Completely free, no watermark,
               no account.
             </p>
@@ -185,18 +185,18 @@ export default function HomePage() {
               </a>
               <a
                 href="#how-it-works"
-                className="w-full sm:w-auto px-8 py-3.5 rounded-xl text-base font-semibold text-slate-700 bg-white border border-slate-200 hover:border-slate-300 hover:shadow-sm transition-all duration-200"
+                className="w-full sm:w-auto px-8 py-3.5 rounded-xl text-base font-semibold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-sm transition-all duration-200"
               >
                 How It Works
               </a>
             </div>
 
             {/* Stats bar */}
-            <div className="inline-flex flex-wrap justify-center gap-x-8 gap-y-4 glass rounded-2xl px-6 py-4 border border-slate-200/60">
+            <div className="inline-flex flex-wrap justify-center gap-x-8 gap-y-4 glass rounded-2xl px-6 py-4 border border-slate-200/60 dark:border-slate-700/60 dark:bg-slate-900/50">
               {stats.map(({ value, label }) => (
                 <div key={label} className="text-center">
                   <div className="text-xl font-bold gradient-text">{value}</div>
-                  <div className="text-xs text-slate-500 mt-0.5">{label}</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{label}</div>
                 </div>
               ))}
             </div>
@@ -234,10 +234,10 @@ export default function HomePage() {
         aria-label="Background removal tool"
       >
         <div className="text-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-2">
             Background Remover Tool
           </h2>
-          <p className="text-slate-500 text-sm md:text-base">
+          <p className="text-slate-500 dark:text-slate-400 text-sm md:text-base">
             Drop your image below to get started — it stays on your device.
           </p>
         </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
       {/* ── HOW IT WORKS SECTION ─────────────────────────────────────────── */}
       <section
         id="how-it-works"
-        className="bg-slate-50 border-t border-slate-100 py-16 md:py-24"
+        className="bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-800 py-16 md:py-24"
         aria-labelledby="how-it-works-heading"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -258,11 +258,11 @@ export default function HomePage() {
             </span>
             <h2
               id="how-it-works-heading"
-              className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
+              className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4"
             >
               How Our AI Background Remover Works
             </h2>
-            <p className="text-slate-500 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
               Understanding the technology behind BgEraser helps you use it more
               effectively and trust the privacy guarantees we make. Here is a detailed,
               step-by-step breakdown of what happens when you process an image.
@@ -273,7 +273,7 @@ export default function HomePage() {
             {steps.map(({ step, title, description, icon }) => (
               <div
                 key={step}
-                className="bg-white rounded-2xl p-7 border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
+                className="bg-white dark:bg-slate-800 rounded-2xl p-7 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
               >
                 <div className="flex items-start gap-5">
                   {/* Step number + icon */}
@@ -284,12 +284,12 @@ export default function HomePage() {
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-1.5">
-                      <span className="text-xs font-bold tracking-widest text-slate-300 uppercase">
+                      <span className="text-xs font-bold tracking-widest text-slate-300 dark:text-slate-500 uppercase">
                         Step {step}
                       </span>
                     </div>
-                    <h3 className="text-lg font-semibold text-slate-800 mb-2">{title}</h3>
-                    <p className="text-sm text-slate-500 leading-relaxed">{description}</p>
+                    <h3 className="text-lg font-semibold text-slate-800 dark:text-white mb-2">{title}</h3>
+                    <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">{description}</p>
                   </div>
                 </div>
               </div>
@@ -297,11 +297,11 @@ export default function HomePage() {
           </div>
 
           {/* Technical deep-dive paragraph block — important for AdSense content quality */}
-          <div className="mt-14 bg-white rounded-2xl p-8 md:p-10 border border-slate-100 shadow-sm">
-            <h3 className="text-xl md:text-2xl font-bold text-slate-800 mb-4">
+          <div className="mt-14 bg-white dark:bg-slate-800 rounded-2xl p-8 md:p-10 border border-slate-100 dark:border-slate-700 shadow-sm">
+            <h3 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-white mb-4">
               The Technology Behind the Magic: A Deeper Explanation
             </h3>
-            <div className="prose prose-slate max-w-none text-sm md:text-base leading-relaxed space-y-4 text-slate-600">
+            <div className="prose prose-slate dark:prose-invert max-w-none text-sm md:text-base leading-relaxed space-y-4 text-slate-600 dark:text-slate-300">
               <p>
                 Traditional background removal software relied on colour-keying (chroma key),
                 where a specific colour — most commonly bright green or blue — was selected
@@ -313,7 +313,7 @@ export default function HomePage() {
               <p>
                 Modern AI background removal uses deep convolutional neural networks (CNNs)
                 and, increasingly, Vision Transformer (ViT) architectures to perform{" "}
-                <strong className="text-slate-800">semantic image segmentation</strong>.
+                <strong className="text-slate-800 dark:text-white">semantic image segmentation</strong>.
                 The AI has learned to understand what constitutes a foreground subject (a
                 person, a product, an animal) versus background context, even in complex,
                 cluttered scenes. This is achieved by training on datasets containing
@@ -331,7 +331,7 @@ export default function HomePage() {
               </p>
               <p>
                 One of the most technically challenging aspects of background removal is
-                handling <strong className="text-slate-800">alpha matting</strong> — the
+                handling <strong className="text-slate-800 dark:text-white">alpha matting</strong> — the
                 smooth, semi-transparent transition between foreground and background. Human
                 hair is the canonical example: individual strands, each potentially a few
                 pixels wide, blending at their edges with the background colour. Our model
@@ -357,11 +357,11 @@ export default function HomePage() {
             </span>
             <h2
               id="why-private-heading"
-              className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
+              className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4"
             >
               Why Choose Our Private AI Approach?
             </h2>
-            <p className="text-slate-500 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
+            <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
               There are dozens of background removal tools online. Here is an honest,
               detailed explanation of why we built BgEraser differently — and why that
               difference matters to you.
@@ -373,27 +373,27 @@ export default function HomePage() {
             {privacyBenefits.map(({ title, description, icon }) => (
               <div
                 key={title}
-                className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
+                className="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
               >
                 <div className="text-3xl mb-4" role="img" aria-label={title}>
                   {icon}
                 </div>
-                <h3 className="text-base font-semibold text-slate-800 mb-2">{title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{description}</p>
+                <h3 className="text-base font-semibold text-slate-800 dark:text-white mb-2">{title}</h3>
+                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">{description}</p>
               </div>
             ))}
           </div>
 
           {/* Use cases */}
           <div className="mt-14">
-            <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-8 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-slate-800 dark:text-white mb-8 text-center">
               Who Uses BgEraser? Real-World Use Cases
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {useCases.map(({ title, description }) => (
                 <div
                   key={title}
-                  className="flex gap-4 p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:bg-white hover:shadow-sm transition-all duration-300"
+                  className="flex gap-4 p-6 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-100 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800 hover:shadow-sm transition-all duration-300"
                 >
                   <div className="flex-shrink-0 mt-0.5">
                     <div className="w-5 h-5 rounded-full gradient-brand flex items-center justify-center">
@@ -412,8 +412,8 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-sm font-semibold text-slate-800 mb-1.5">{title}</h4>
-                    <p className="text-sm text-slate-500 leading-relaxed">{description}</p>
+                    <h4 className="text-sm font-semibold text-slate-800 dark:text-white mb-1.5">{title}</h4>
+                    <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">{description}</p>
                   </div>
                 </div>
               ))}
@@ -422,20 +422,20 @@ export default function HomePage() {
 
           {/* Comparison table */}
           <div className="mt-14">
-            <h3 className="text-2xl font-bold text-slate-800 mb-6 text-center">
+            <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-6 text-center">
               BgEraser vs Other Background Removal Tools
             </h3>
-            <div className="overflow-x-auto rounded-2xl border border-slate-100 shadow-sm">
-              <table className="w-full text-sm text-left bg-white">
+            <div className="overflow-x-auto rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+              <table className="w-full text-sm text-left bg-white dark:bg-slate-800">
                 <thead>
-                  <tr className="border-b border-slate-100">
-                    <th className="px-6 py-4 font-semibold text-slate-700 bg-slate-50">Feature</th>
-                    <th className="px-6 py-4 font-semibold text-brand-600 bg-brand-50 text-center">BgEraser ✓</th>
-                    <th className="px-6 py-4 font-semibold text-slate-500 text-center">Cloud Tools</th>
-                    <th className="px-6 py-4 font-semibold text-slate-500 text-center">Desktop Apps</th>
+                  <tr className="border-b border-slate-100 dark:border-slate-700">
+                    <th className="px-6 py-4 font-semibold text-slate-700 dark:text-slate-200 bg-slate-50 dark:bg-slate-900/50">Feature</th>
+                    <th className="px-6 py-4 font-semibold text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-900/20 text-center">BgEraser ✓</th>
+                    <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 text-center">Cloud Tools</th>
+                    <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 text-center">Desktop Apps</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-50">
+                <tbody className="divide-y divide-slate-50 dark:divide-slate-700/50">
                   {[
                     ["Free to use", "✅ Always free", "⚠️ Limited free tier", "⚠️ One-time or subscription cost"],
                     ["No watermark", "✅ Never", "❌ Paid only", "✅ Yes"],
@@ -445,11 +445,11 @@ export default function HomePage() {
                     ["Handles complex hair", "✅ AI-powered", "✅ AI-powered", "⚠️ Varies"],
                     ["GDPR / CCPA compliant", "✅ By design", "⚠️ Depends on policy", "✅ Generally"],
                   ].map(([feature, bgeraser, cloud, desktop]) => (
-                    <tr key={feature} className="hover:bg-slate-50/50 transition-colors">
-                      <td className="px-6 py-3.5 font-medium text-slate-700">{feature}</td>
-                      <td className="px-6 py-3.5 text-center text-slate-700 bg-brand-50/30">{bgeraser}</td>
-                      <td className="px-6 py-3.5 text-center text-slate-500">{cloud}</td>
-                      <td className="px-6 py-3.5 text-center text-slate-500">{desktop}</td>
+                    <tr key={feature} className="hover:bg-slate-50/50 dark:hover:bg-slate-700/30 transition-colors">
+                      <td className="px-6 py-3.5 font-medium text-slate-700 dark:text-slate-200">{feature}</td>
+                      <td className="px-6 py-3.5 text-center text-slate-700 dark:text-brand-300 bg-brand-50/30 dark:bg-brand-900/10">{bgeraser}</td>
+                      <td className="px-6 py-3.5 text-center text-slate-500 dark:text-slate-400">{cloud}</td>
+                      <td className="px-6 py-3.5 text-center text-slate-500 dark:text-slate-400">{desktop}</td>
                     </tr>
                   ))}
                 </tbody>

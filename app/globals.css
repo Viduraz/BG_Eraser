@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* ── Custom Design Tokens (Tailwind v4 @theme) ─────────────────────────── */
 @theme inline {
   --font-sans: "Inter", system-ui, sans-serif;

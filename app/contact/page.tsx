@@ -67,17 +67,17 @@ export default function ContactPage() {
   return (
     <>
       {/* ── ABOUT US HERO ─────────────────────────────────────────────── */}
-      <section className="gradient-hero border-b border-slate-100">
+      <section className="gradient-hero border-b border-slate-100 dark:border-slate-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand-600 mb-4">
               About BgEraser
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
               We Build AI Tools That{" "}
               <span className="gradient-text">Respect Your Privacy</span>
             </h1>
-            <p className="text-base md:text-lg text-slate-500 leading-relaxed">
+            <p className="text-base md:text-lg text-slate-500 dark:text-slate-400 leading-relaxed">
               BgEraser is on a mission to make professional-grade AI tools accessible to
               everyone, without compromising the privacy or security of the people who
               use them. We believe you should not have to choose between a powerful tool
@@ -90,13 +90,13 @@ export default function ContactPage() {
             {values.map(({ icon, title, description }) => (
               <div
                 key={title}
-                className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
+                className="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
               >
                 <div className="text-3xl mb-3" role="img" aria-label={title}>
                   {icon}
                 </div>
-                <h3 className="text-base font-semibold text-slate-800 mb-1.5">{title}</h3>
-                <p className="text-sm text-slate-500 leading-relaxed">{description}</p>
+                <h3 className="text-base font-semibold text-slate-800 dark:text-white mb-1.5">{title}</h3>
+                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">{description}</p>
               </div>
             ))}
           </div>
@@ -104,12 +104,12 @@ export default function ContactPage() {
       </section>
 
       {/* ── MISSION STATEMENT ─────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 border-b border-slate-100 bg-white">
+      <section className="py-14 md:py-20 border-b border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-slate prose-lg max-w-none
+          <div className="prose prose-slate dark:prose-invert prose-lg max-w-none
             prose-headings:font-bold prose-h2:text-2xl prose-h2:tracking-tight
-            prose-p:text-slate-600 prose-p:leading-relaxed
-            prose-strong:text-slate-800
+            prose-p:text-slate-600 dark:prose-p:text-slate-300 prose-p:leading-relaxed
+            prose-strong:text-slate-800 dark:prose-strong:text-white
           ">
             <h2>Our Story and Mission</h2>
             <p>
@@ -206,7 +206,7 @@ export default function ContactPage() {
       {/* ── CONTACT SECTION ───────────────────────────────────────────── */}
       <section
         id="contact"
-        className="py-14 md:py-20 bg-slate-50 border-b border-slate-100"
+        className="py-14 md:py-20 bg-slate-50 dark:bg-slate-900/50 border-b border-slate-100 dark:border-slate-800"
         aria-labelledby="contact-heading"
       >
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -218,11 +218,11 @@ export default function ContactPage() {
               </span>
               <h2
                 id="contact-heading"
-                className="text-2xl md:text-3xl font-bold text-slate-900 mb-4"
+                className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4"
               >
                 Contact the BgEraser Team
               </h2>
-              <p className="text-slate-500 leading-relaxed mb-8">
+              <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-8">
                 We are a small team and we read every message. Whether you have a
                 technical question, a feature request, a press enquiry, or simply want to
                 say hello, please reach out — we typically respond within 1–2 business
@@ -271,14 +271,14 @@ export default function ContactPage() {
                   <a
                     key={label}
                     href={href}
-                    className="flex items-center gap-4 p-4 bg-white rounded-xl border border-slate-100 shadow-sm hover:border-brand-200 hover:shadow-md transition-all duration-200 group"
+                    className="flex items-center gap-4 p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm hover:border-brand-200 dark:hover:border-brand-700 hover:shadow-md transition-all duration-200 group"
                     aria-label={`${label}: ${value}`}
                   >
                     <div className="w-10 h-10 rounded-xl gradient-brand flex items-center justify-center text-white flex-shrink-0">
                       {icon}
                     </div>
                     <div>
-                      <p className="text-xs font-medium text-slate-400 mb-0.5">{label}</p>
+                      <p className="text-xs font-medium text-slate-400 dark:text-slate-500 mb-0.5">{label}</p>
                       <p className="text-sm font-semibold text-brand-600 group-hover:text-brand-700 transition-colors">
                         {value}
                       </p>
@@ -287,7 +287,7 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              <p className="text-xs text-slate-400 mt-6 leading-relaxed">
+              <p className="text-xs text-slate-400 dark:text-slate-500 mt-6 leading-relaxed">
                 <strong>Response time:</strong> We aim to respond to all enquiries within
                 1–2 business days (Monday–Friday, UK business hours). For urgent issues,
                 please include "URGENT" in your email subject line.
@@ -295,9 +295,9 @@ export default function ContactPage() {
             </div>
 
             {/* Right: Contact form (UI only — wire up to a form service like Formspree or Resend) */}
-            <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-7">
-              <h3 className="text-lg font-bold text-slate-800 mb-1">Send Us a Message</h3>
-              <p className="text-sm text-slate-400 mb-6">
+            <div className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm p-7">
+              <h3 className="text-lg font-bold text-slate-800 dark:text-white mb-1">Send Us a Message</h3>
+              <p className="text-sm text-slate-400 dark:text-slate-500 mb-6">
                 Fill out the form below and we will get back to you by email.
               </p>
 
@@ -319,7 +319,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="contact-name"
-                    className="block text-sm font-medium text-slate-700 mb-1.5"
+                    className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5"
                   >
                     Your Name
                   </label>
@@ -329,7 +329,7 @@ export default function ContactPage() {
                     name="name"
                     placeholder="Jane Smith"
                     autoComplete="name"
-                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm text-slate-800 placeholder-slate-300 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent focus:bg-white transition-all duration-150"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-sm text-slate-800 dark:text-white placeholder-slate-300 dark:placeholder-slate-500 bg-slate-50 dark:bg-slate-900/50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent focus:bg-white dark:focus:bg-slate-800 transition-all duration-150"
                   />
                 </div>
 
@@ -337,7 +337,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="contact-email"
-                    className="block text-sm font-medium text-slate-700 mb-1.5"
+                    className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5"
                   >
                     Email Address <span className="text-red-400" aria-hidden="true">*</span>
                   </label>
@@ -348,7 +348,7 @@ export default function ContactPage() {
                     placeholder="jane@example.com"
                     autoComplete="email"
                     required
-                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm text-slate-800 placeholder-slate-300 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent focus:bg-white transition-all duration-150"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-sm text-slate-800 dark:text-white placeholder-slate-300 dark:placeholder-slate-500 bg-slate-50 dark:bg-slate-900/50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent focus:bg-white dark:focus:bg-slate-800 transition-all duration-150"
                   />
                 </div>
 
@@ -356,14 +356,14 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="contact-subject"
-                    className="block text-sm font-medium text-slate-700 mb-1.5"
+                    className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5"
                   >
                     Subject
                   </label>
                   <select
                     id="contact-subject"
                     name="subject"
-                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm text-slate-700 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent focus:bg-white transition-all duration-150"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-sm text-slate-700 dark:text-slate-300 bg-slate-50 dark:bg-slate-900/50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent focus:bg-white dark:focus:bg-slate-800 transition-all duration-150"
                   >
                     <option value="">Select a topic…</option>
                     <option value="general">General Enquiry</option>
@@ -380,7 +380,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="contact-message"
-                    className="block text-sm font-medium text-slate-700 mb-1.5"
+                    className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5"
                   >
                     Message <span className="text-red-400" aria-hidden="true">*</span>
                   </label>
@@ -390,12 +390,12 @@ export default function ContactPage() {
                     rows={5}
                     placeholder="Tell us how we can help…"
                     required
-                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm text-slate-800 placeholder-slate-300 bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent focus:bg-white transition-all duration-150 resize-none"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-sm text-slate-800 dark:text-white placeholder-slate-300 dark:placeholder-slate-500 bg-slate-50 dark:bg-slate-900/50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent focus:bg-white dark:focus:bg-slate-800 transition-all duration-150 resize-none"
                   />
                 </div>
 
                 {/* Privacy note */}
-                <p className="text-xs text-slate-400 flex items-start gap-1.5">
+                <p className="text-xs text-slate-400 dark:text-slate-500 flex items-start gap-1.5">
                   <svg className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                     <rect x="3" y="11" width="18" height="11" rx="2" />
                     <path d="M7 11V7a5 5 0 0110 0v4" />
@@ -422,7 +422,7 @@ export default function ContactPage() {
       </section>
 
       {/* ── FAQ SECTION ───────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-white" aria-labelledby="faq-heading">
+      <section className="py-14 md:py-20 bg-white dark:bg-slate-950" aria-labelledby="faq-heading">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand-600 mb-3">
@@ -430,11 +430,11 @@ export default function ContactPage() {
             </span>
             <h2
               id="faq-heading"
-              className="text-2xl md:text-3xl font-bold text-slate-900 mb-3"
+              className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-3"
             >
               Frequently Asked Questions
             </h2>
-            <p className="text-slate-500 max-w-xl mx-auto text-sm md:text-base">
+            <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto text-sm md:text-base">
               Can&apos;t find what you&apos;re looking for? Email us at{" "}
               <a href="mailto:hello@bgeraser.com" className="text-brand-600 hover:underline font-medium">
                 hello@bgeraser.com
@@ -447,9 +447,9 @@ export default function ContactPage() {
             {faqs.map(({ q, a }) => (
               <div
                 key={q}
-                className="bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:bg-white hover:shadow-sm transition-all duration-200"
+                className="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 border border-slate-100 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800 hover:shadow-sm transition-all duration-200"
               >
-                <h3 className="text-sm font-semibold text-slate-800 mb-2 flex items-start gap-2">
+                <h3 className="text-sm font-semibold text-slate-800 dark:text-white mb-2 flex items-start gap-2">
                   <span
                     className="flex-shrink-0 w-5 h-5 rounded-full gradient-brand flex items-center justify-center text-[10px] font-bold text-white mt-0.5"
                     aria-hidden="true"
@@ -458,7 +458,7 @@ export default function ContactPage() {
                   </span>
                   {q}
                 </h3>
-                <p className="text-sm text-slate-500 leading-relaxed pl-7">{a}</p>
+                <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed pl-7">{a}</p>
               </div>
             ))}
           </div>
@@ -466,8 +466,8 @@ export default function ContactPage() {
       </section>
 
       {/* ── CTA ───────────────────────────────────────────────────────── */}
-      <div className="border-t border-slate-100 py-10 text-center bg-slate-50">
-        <p className="text-sm text-slate-400 mb-3">Ready to try the tool?</p>
+      <div className="border-t border-slate-100 dark:border-slate-800 py-10 text-center bg-slate-50 dark:bg-slate-900/50">
+        <p className="text-sm text-slate-400 dark:text-slate-500 mb-3">Ready to try the tool?</p>
         <a
           href="/#tool"
           className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold text-white gradient-brand hover:opacity-90 hover:shadow-md transition-all duration-200 shadow-sm"

@@ -562,8 +562,8 @@ export default function BackgroundRemover() {
             focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2
             ${
               isDragOver
-                ? "border-brand-400 bg-brand-50/80 shadow-lg shadow-brand-100/60 scale-[1.015]"
-                : "border-slate-200 bg-slate-50/60 hover:border-brand-300 hover:bg-brand-50/40 hover:shadow-sm"
+                ? "border-brand-400 bg-brand-50/80 dark:bg-brand-900/30 shadow-lg shadow-brand-100/60 scale-[1.015]"
+                : "border-slate-200 dark:border-slate-700 bg-slate-50/60 dark:bg-slate-900/60 hover:border-brand-300 hover:bg-brand-50/40 dark:hover:bg-slate-800 hover:shadow-sm"
             }
           `}
         >
@@ -571,8 +571,8 @@ export default function BackgroundRemover() {
           <div
             className={`
               w-20 h-20 rounded-2xl flex items-center justify-center
-              border border-white shadow-sm transition-all duration-300
-              ${isDragOver ? "gradient-brand shadow-md scale-110" : "bg-white"}
+              border border-white dark:border-slate-700 shadow-sm transition-all duration-300
+              ${isDragOver ? "gradient-brand shadow-md scale-110" : "bg-white dark:bg-slate-800"}
             `}
             aria-hidden="true"
           >
@@ -593,10 +593,10 @@ export default function BackgroundRemover() {
 
           {/* Labels */}
           <div className="text-center">
-            <p className="text-lg font-semibold text-slate-800 mb-1">
+            <p className="text-lg font-semibold text-slate-800 dark:text-white mb-1">
               {isDragOver ? "Release to process" : "Drag & drop your image here"}
             </p>
-            <p className="text-sm text-slate-400 mb-4">
+            <p className="text-sm text-slate-400 dark:text-slate-500 mb-4">
               or{" "}
               <span className="text-brand-600 font-medium underline underline-offset-2 decoration-dotted">
                 click to browse files
@@ -608,12 +608,12 @@ export default function BackgroundRemover() {
               {["JPG", "PNG", "WEBP"].map((fmt) => (
                 <span
                   key={fmt}
-                  className="px-2.5 py-1 rounded-md bg-white border border-slate-200 text-xs font-medium text-slate-500"
+                  className="px-2.5 py-1 rounded-md bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-500 dark:text-slate-400"
                 >
                   {fmt}
                 </span>
               ))}
-              <span className="text-xs text-slate-400">
+              <span className="text-xs text-slate-400 dark:text-slate-500">
                 · up to {MAX_FILE_SIZE_MB} MB
               </span>
             </div>
@@ -621,7 +621,7 @@ export default function BackgroundRemover() {
 
           {/* Privacy badge */}
           <div
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 text-[11px] text-slate-400 pointer-events-none"
+            className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 text-[11px] text-slate-400 dark:text-slate-500 pointer-events-none"
             aria-label="Privacy guarantee"
           >
             <svg
@@ -654,13 +654,13 @@ export default function BackgroundRemover() {
       {/* ════════════════════════════════════════════════════════════════════ */}
       {isBusy && (
         <div
-          className="rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden"
+          className="rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden"
           role="status"
           aria-label={stageLabel[stage]}
         >
           {/* Original image preview with scanning sweep */}
           {originalUrl && (
-            <div className="relative w-full h-52 bg-slate-100 overflow-hidden">
+            <div className="relative w-full h-52 bg-slate-100 dark:bg-slate-800 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={originalUrl}
@@ -669,7 +669,7 @@ export default function BackgroundRemover() {
               />
               {/* Scanning light sweep */}
               <div
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent pointer-events-none"
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 dark:via-white/10 to-transparent pointer-events-none"
                 style={{ animation: "bge-scan 2s ease-in-out infinite" }}
                 aria-hidden="true"
               />
@@ -716,32 +716,32 @@ export default function BackgroundRemover() {
 
             {/* Status text */}
             <div>
-              <p className="text-base font-semibold text-slate-800 mb-1">
+              <p className="text-base font-semibold text-slate-800 dark:text-white mb-1">
                 {stageLabel[stage]}
               </p>
 
               {/* Byte-level detail for download stages */}
               {progressTick && progressTick.total > 0 && (
-                <p className="text-xs text-slate-400 mt-1">
+                <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
                   {formatBytes(progressTick.current)}{" "}
-                  <span className="text-slate-300">/</span>{" "}
+                  <span className="text-slate-300 dark:text-slate-600">/</span>{" "}
                   {formatBytes(progressTick.total)}
                 </p>
               )}
 
               {/* Stage-specific hint messages */}
               {stage === "initializing" && (
-                <p className="text-xs text-slate-400 mt-1">
+                <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
                   Checking WebAssembly environment…
                 </p>
               )}
               {stage === "downloading" && progressPct === 0 && (
-                <p className="text-xs text-slate-400 mt-1">
+                <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
                   First run only — model is cached locally afterwards
                 </p>
               )}
               {stage === "inferring" && (
-                <p className="text-xs text-slate-400 mt-1">
+                <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
                   AI is running on your device — this may take 3–15 seconds
                 </p>
               )}
@@ -753,7 +753,7 @@ export default function BackgroundRemover() {
             {/* Progress bar (shown when we have real byte progress) */}
             {showProgressRing && (
               <div
-                className="w-full max-w-sm bg-slate-100 rounded-full h-1.5 overflow-hidden"
+                className="w-full max-w-sm bg-slate-100 dark:bg-slate-800 rounded-full h-1.5 overflow-hidden"
                 role="progressbar"
                 aria-valuenow={progressPct}
                 aria-valuemin={0}
@@ -767,7 +767,7 @@ export default function BackgroundRemover() {
             )}
 
             {/* Privacy reminder */}
-            <p className="text-xs text-slate-400 flex items-center gap-1.5">
+            <p className="text-xs text-slate-400 dark:text-slate-500 flex items-center gap-1.5">
               <svg
                 className="w-3.5 h-3.5 flex-shrink-0"
                 viewBox="0 0 24 24"
@@ -789,16 +789,16 @@ export default function BackgroundRemover() {
       {/* DONE — side-by-side result + download                              */}
       {/* ════════════════════════════════════════════════════════════════════ */}
       {stage === "done" && resultUrl && originalUrl && (
-        <div className="rounded-2xl border border-slate-100 bg-white shadow-sm overflow-hidden">
+        <div className="rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden">
           {/* Before / After grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
+          <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-slate-100 dark:divide-slate-800">
             {/* Original */}
             <div className="p-5">
-              <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3 text-center">
+              <p className="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-3 text-center">
                 Original
               </p>
               <div
-                className="rounded-xl overflow-hidden bg-slate-50 flex items-center justify-center"
+                className="rounded-xl overflow-hidden bg-slate-50 dark:bg-slate-800/50 flex items-center justify-center"
                 style={{ minHeight: "240px" }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -842,7 +842,7 @@ export default function BackgroundRemover() {
           </div>
 
           {/* Action bar */}
-          <div className="px-5 pb-5 pt-4 border-t border-slate-50 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+          <div className="px-5 pb-5 pt-4 border-t border-slate-50 dark:border-slate-800 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
             {/* Download — primary CTA */}
             <button
               onClick={handleDownload}
@@ -868,7 +868,7 @@ export default function BackgroundRemover() {
 
             {/* File size info */}
             {resultBlob && (
-              <span className="text-xs text-slate-400 text-center sm:text-left px-1 whitespace-nowrap">
+              <span className="text-xs text-slate-400 dark:text-slate-500 text-center sm:text-left px-1 whitespace-nowrap">
                 {formatBytes(resultBlob.size)} · Transparent PNG
               </span>
             )}
@@ -877,7 +877,7 @@ export default function BackgroundRemover() {
               {/* Process same image again (drag a new one in) */}
               <button
                 onClick={() => fileInputRef.current?.click()}
-                className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium text-brand-600 bg-brand-50 hover:bg-brand-100 active:scale-[0.98] transition-all duration-200 border border-brand-100"
+                className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-900/30 hover:bg-brand-100 dark:hover:bg-brand-900/50 active:scale-[0.98] transition-all duration-200 border border-brand-100 dark:border-brand-800/50"
                 aria-label="Upload a new image"
               >
                 <svg
@@ -900,7 +900,7 @@ export default function BackgroundRemover() {
               {/* Try another (shows drop zone again) */}
               <button
                 onClick={handleUploadAnother}
-                className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 bg-slate-100 hover:bg-slate-200 active:scale-[0.98] transition-all duration-200"
+                className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 active:scale-[0.98] transition-all duration-200"
                 aria-label="Remove background from a different image"
               >
                 <svg
@@ -929,17 +929,17 @@ export default function BackgroundRemover() {
       {stage === "error" && appError && (
         <div
           role="alert"
-          className="rounded-2xl border border-red-100 bg-red-50 overflow-hidden"
+          className="rounded-2xl border border-red-100 dark:border-red-900/50 bg-red-50 dark:bg-red-950/30 overflow-hidden"
         >
           {/* Header bar */}
           <div className="px-6 py-5 flex items-start gap-4">
             {/* Error icon */}
             <div
-              className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center mt-0.5"
+              className="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/50 flex items-center justify-center mt-0.5"
               aria-hidden="true"
             >
               <svg
-                className="w-6 h-6 text-red-500"
+                className="w-6 h-6 text-red-500 dark:text-red-400"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -955,10 +955,10 @@ export default function BackgroundRemover() {
 
             {/* Error text */}
             <div className="flex-1 min-w-0">
-              <h3 className="text-sm font-semibold text-red-800 mb-1">
+              <h3 className="text-sm font-semibold text-red-800 dark:text-red-400 mb-1">
                 {appError.title}
               </h3>
-              <p className="text-sm text-red-700/80 leading-relaxed">
+              <p className="text-sm text-red-700/80 dark:text-red-300/80 leading-relaxed">
                 {appError.body}
               </p>
 
@@ -967,13 +967,13 @@ export default function BackgroundRemover() {
                 <div className="mt-3">
                   <button
                     onClick={() => setShowTechnical((v) => !v)}
-                    className="text-xs text-red-500 hover:text-red-700 underline underline-offset-2 transition-colors"
+                    className="text-xs text-red-500 dark:text-red-400 hover:text-red-700 dark:hover:text-red-300 underline underline-offset-2 transition-colors"
                     aria-expanded={showTechnical}
                   >
                     {showTechnical ? "Hide" : "Show"} technical details
                   </button>
                   {showTechnical && (
-                    <pre className="mt-2 p-3 rounded-lg bg-red-100 text-[11px] text-red-700 overflow-x-auto whitespace-pre-wrap break-all font-mono leading-relaxed">
+                    <pre className="mt-2 p-3 rounded-lg bg-red-100 dark:bg-red-900/30 text-[11px] text-red-700 dark:text-red-300 overflow-x-auto whitespace-pre-wrap break-all font-mono leading-relaxed">
                       {appError.technical}
                     </pre>
                   )}
@@ -992,7 +992,7 @@ export default function BackgroundRemover() {
             </button>
             <button
               onClick={handleUploadAnother}
-              className="flex-1 sm:flex-initial px-5 py-2.5 rounded-xl text-sm font-medium text-slate-700 bg-white border border-slate-200 hover:border-slate-300 hover:shadow-sm active:scale-95 transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-2"
+              className="flex-1 sm:flex-initial px-5 py-2.5 rounded-xl text-sm font-medium text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-sm active:scale-95 transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-2"
             >
               Upload Different Image
             </button>

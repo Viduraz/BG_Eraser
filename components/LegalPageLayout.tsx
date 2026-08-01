@@ -21,15 +21,15 @@ export default function LegalPageLayout({
   return (
     <>
       {/* ── Page hero ──────────────────────────────────────────────── */}
-      <section className="gradient-hero border-b border-slate-100">
+      <section className="gradient-hero border-b border-slate-100 dark:border-slate-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-4">
             {title}
           </h1>
-          <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed mb-6">
+          <p className="text-base md:text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed mb-6">
             {subtitle}
           </p>
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-xs font-medium text-slate-500">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-500 dark:text-slate-400">
             <svg
               className="w-3.5 h-3.5 text-slate-400"
               viewBox="0 0 24 24"
@@ -49,21 +49,21 @@ export default function LegalPageLayout({
       </section>
 
       {/* ── Prose content ───────────────────────────────────────────── */}
-      <section className="py-12 md:py-16 bg-white">
+      <section className="py-12 md:py-16 bg-white dark:bg-slate-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* 
             Tailwind Typography prose class — gives headings, paragraphs,
             lists, links, and hr elements beautiful default styling.
           */}
-          <article className="prose prose-slate prose-lg max-w-none
+          <article className="prose prose-slate dark:prose-invert prose-lg max-w-none
             prose-headings:font-bold prose-headings:tracking-tight
-            prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:border-b prose-h2:border-slate-100 prose-h2:pb-3
+            prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:border-b prose-h2:border-slate-100 dark:prose-h2:border-slate-800 prose-h2:pb-3
             prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-3
-            prose-p:text-slate-600 prose-p:leading-relaxed
-            prose-li:text-slate-600
-            prose-a:text-brand-600 prose-a:no-underline hover:prose-a:underline
-            prose-strong:text-slate-800
-            prose-hr:border-slate-100 prose-hr:my-10
+            prose-p:text-slate-600 dark:prose-p:text-slate-400 prose-p:leading-relaxed
+            prose-li:text-slate-600 dark:prose-li:text-slate-400
+            prose-a:text-brand-600 dark:prose-a:text-brand-400 prose-a:no-underline hover:prose-a:underline
+            prose-strong:text-slate-800 dark:prose-strong:text-white
+            prose-hr:border-slate-100 dark:prose-hr:border-slate-800 prose-hr:my-10
           ">
             {children}
           </article>
@@ -71,7 +71,7 @@ export default function LegalPageLayout({
       </section>
 
       {/* ── Back link ───────────────────────────────────────────────── */}
-      <div className="border-t border-slate-100 py-8 text-center">
+      <div className="border-t border-slate-100 dark:border-slate-800 py-8 text-center">
         <a
           href="/"
           className="inline-flex items-center gap-2 text-sm font-medium text-brand-600 hover:text-brand-700 transition-colors"

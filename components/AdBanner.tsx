@@ -149,13 +149,13 @@ export default function AdBanner({
     <div
       className={`
         w-full flex flex-col items-center justify-center gap-1.5
-        bg-slate-100 border border-dashed border-slate-300 rounded-lg
+        bg-slate-100 dark:bg-slate-800/50 border border-dashed border-slate-300 dark:border-slate-700 rounded-lg
         ${heightClass} ${className}
       `}
       aria-label="Advertisement placeholder"
       role="complementary"
     >
-      <div className="flex items-center gap-2 text-slate-400 pointer-events-none select-none">
+      <div className="flex items-center gap-2 text-slate-400 dark:text-slate-500 pointer-events-none select-none">
         <svg
           className="w-4 h-4 flex-shrink-0"
           viewBox="0 0 24 24"
@@ -169,7 +169,7 @@ export default function AdBanner({
         </svg>
         <span className="text-xs font-medium tracking-wide">{placeholderLabel}</span>
       </div>
-      <span className="text-[10px] text-slate-300 text-center px-4 leading-tight">
+      <span className="text-[10px] text-slate-300 dark:text-slate-600 text-center px-4 leading-tight">
         {sublabel}
       </span>
     </div>

@@ -75,18 +75,18 @@ export default async function NichePage({
         />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-14 md:pt-16 md:pb-20 text-center">
           {/* Breadcrumb */}
-          <nav className="flex items-center justify-center gap-2 text-xs text-slate-400 mb-5" aria-label="Breadcrumb">
-            <a href="/" className="hover:text-brand-600 transition-colors">Home</a>
+          <nav className="flex items-center justify-center gap-2 text-xs text-slate-400 dark:text-slate-500 mb-5" aria-label="Breadcrumb">
+            <a href="/" className="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Home</a>
             <span aria-hidden="true">›</span>
-            <span className="text-slate-600">{content.title}</span>
+            <span className="text-slate-600 dark:text-slate-400">{content.title}</span>
           </nav>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-4 leading-tight">
             Free Background Remover for{" "}
             <span className="gradient-text">{content.title}</span>
           </h1>
 
-          <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
             {content.metaDescription}
           </p>
         </div>
@@ -99,10 +99,10 @@ export default async function NichePage({
         aria-label={`Background removal tool for ${content.title}`}
       >
         <div className="text-center mb-6">
-          <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-1.5">
+          <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white mb-1.5">
             Remove Background from {content.title}
           </h2>
-          <p className="text-sm text-slate-400">{content.toolSubtitle}</p>
+          <p className="text-sm text-slate-400 dark:text-slate-500">{content.toolSubtitle}</p>
         </div>
 
         <BackgroundRemover />
@@ -115,7 +115,7 @@ export default async function NichePage({
             "✓ Free, no watermark",
             "✓ Works on any device",
           ].map((item) => (
-            <span key={item} className="text-xs text-slate-400">
+            <span key={item} className="text-xs text-slate-400 dark:text-slate-500">
               {item}
             </span>
           ))}
@@ -124,7 +124,7 @@ export default async function NichePage({
 
       {/* ── NICHE CONTENT ─────────────────────────────────────────────── */}
       <section
-        className="bg-slate-50 border-t border-slate-100 py-14 md:py-20"
+        className="bg-slate-50 dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-800 py-14 md:py-20"
         aria-label={`Guide to background removal for ${content.title}`}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -134,7 +134,7 @@ export default async function NichePage({
             <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand-600 mb-3">
               Why It Matters
             </span>
-            <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+            <p className="text-base md:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
               {content.intro}
             </p>
           </div>
@@ -142,11 +142,11 @@ export default async function NichePage({
           {/* Content sections */}
           <div className="space-y-10">
             {content.sections.map(({ heading, body }) => (
-              <article key={heading} className="bg-white rounded-2xl p-7 border border-slate-100 shadow-sm">
-                <h3 className="text-lg md:text-xl font-bold text-slate-800 mb-3">
+              <article key={heading} className="bg-white dark:bg-slate-800 rounded-2xl p-7 border border-slate-100 dark:border-slate-700 shadow-sm">
+                <h3 className="text-lg md:text-xl font-bold text-slate-800 dark:text-white mb-3">
                   {heading}
                 </h3>
-                <p className="text-sm md:text-base text-slate-500 leading-relaxed">
+                <p className="text-sm md:text-base text-slate-500 dark:text-slate-400 leading-relaxed">
                   {body}
                 </p>
               </article>
@@ -155,8 +155,8 @@ export default async function NichePage({
 
           {/* Benefits list */}
           {content.benefits.length > 0 && (
-            <div className="mt-10 bg-brand-50 rounded-2xl p-7 border border-brand-100">
-              <h3 className="text-lg font-bold text-slate-800 mb-5">
+            <div className="mt-10 bg-brand-50 dark:bg-brand-900/20 rounded-2xl p-7 border border-brand-100 dark:border-brand-800/50">
+              <h3 className="text-lg font-bold text-slate-800 dark:text-white mb-5">
                 Key Benefits for {content.title}
               </h3>
               <ul className="space-y-3">
@@ -176,7 +176,7 @@ export default async function NichePage({
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
                     </div>
-                    <span className="text-sm text-slate-600">{benefit}</span>
+                    <span className="text-sm text-slate-600 dark:text-slate-300">{benefit}</span>
                   </li>
                 ))}
               </ul>
@@ -186,17 +186,17 @@ export default async function NichePage({
           {/* FAQ */}
           {content.faq.length > 0 && (
             <div className="mt-10">
-              <h3 className="text-xl font-bold text-slate-800 mb-6">
+              <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-6">
                 Frequently Asked Questions
               </h3>
               <div className="space-y-4">
                 {content.faq.map(({ q, a }) => (
                   <div
                     key={q}
-                    className="bg-white rounded-xl p-6 border border-slate-100 shadow-sm"
+                    className="bg-white dark:bg-slate-800 rounded-xl p-6 border border-slate-100 dark:border-slate-700 shadow-sm"
                   >
-                    <h4 className="text-sm font-semibold text-slate-800 mb-2">{q}</h4>
-                    <p className="text-sm text-slate-500 leading-relaxed">{a}</p>
+                    <h4 className="text-sm font-semibold text-slate-800 dark:text-white mb-2">{q}</h4>
+                    <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">{a}</p>
                   </div>
                 ))}
               </div>
@@ -205,7 +205,7 @@ export default async function NichePage({
 
           {/* CTA back to main tool */}
           <div className="mt-12 text-center">
-            <p className="text-sm text-slate-400 mb-3">
+            <p className="text-sm text-slate-400 dark:text-slate-500 mb-3">
               Want to try other types of background removal?
             </p>
             <a
@@ -237,9 +237,9 @@ function RelatedNiches({ currentSlug }: { currentSlug: string }) {
   if (related.length === 0) return null;
 
   return (
-    <section className="py-12 md:py-16 border-t border-slate-100">
+    <section className="py-12 md:py-16 border-t border-slate-100 dark:border-slate-800">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-lg font-bold text-slate-700 mb-6 text-center">
+        <h2 className="text-lg font-bold text-slate-700 dark:text-slate-200 mb-6 text-center">
           Background Removal for Other Niches
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -247,10 +247,10 @@ function RelatedNiches({ currentSlug }: { currentSlug: string }) {
             <a
               key={slug}
               href={`/${slug}`}
-              className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white border border-slate-100 shadow-sm hover:border-brand-200 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 text-center"
+              className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 shadow-sm hover:border-brand-200 dark:hover:border-brand-700 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 text-center"
             >
               <span className="text-2xl" role="img" aria-label={label}>{icon}</span>
-              <span className="text-xs font-medium text-slate-600">{label}</span>
+              <span className="text-xs font-medium text-slate-600 dark:text-slate-300">{label}</span>
             </a>
           ))}
         </div>
