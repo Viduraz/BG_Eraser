@@ -372,9 +372,7 @@ export default function BackgroundRemover() {
     }
 
     // ── 5. Dynamic import (avoids Turbopack/SSR WASM bundling issues) ──────
-    let imglyRemoveBackground: Awaited<
-      ReturnType<typeof import("@imgly/background-removal")>
-    >["imglyRemoveBackground"];
+    let imglyRemoveBackground: any;
 
     try {
       const mod = await import("@imgly/background-removal");

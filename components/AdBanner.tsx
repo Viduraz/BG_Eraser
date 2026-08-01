@@ -80,7 +80,7 @@ export default function AdBanner({
         setAdBlocked(true);
         return;
       }
-      (window as Window & { adsbygoogle: unknown[] }).adsbygoogle.push({});
+      (window as any).adsbygoogle.push({});
       pushed.current = true;
       setLiveMode(true);
     } catch (err) {
