@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/routing";
-
+import Image from "next/image";
 const footerSections = [
   {
     heading: "Top Niches",
@@ -48,20 +48,14 @@ export default function Footer() {
           {/* Brand column */}
           <div className="md:col-span-1">
             <Link href="/" className="inline-flex items-center gap-2.5 mb-4 group">
-              <div className="w-8 h-8 rounded-lg gradient-brand flex items-center justify-center flex-shrink-0">
-                <svg
-                  className="w-4.5 h-4.5 text-white"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M3 6l9-4 9 4v6c0 5-4 9-9 9s-9-4-9-9V6z" />
-                  <path d="M9 12l2 2 4-4" />
-                </svg>
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden bg-white">
+                <Image 
+                  src="/logo.png" 
+                  alt="EraseImageBg Logo" 
+                  width={32} 
+                  height={32} 
+                  className="object-cover"
+                />
               </div>
               <span className="text-lg font-bold text-white">EraseImageBg</span>
             </Link>

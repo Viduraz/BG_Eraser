@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -37,21 +38,15 @@ export default function Header() {
             className="flex items-center gap-2.5 group flex-shrink-0"
             aria-label="EraseImageBg Home"
           >
-            {/* SVG Logo Mark */}
-            <div className="relative w-9 h-9 rounded-xl gradient-brand flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-200">
-              <svg
-                className="w-5 h-5 text-white"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M3 6l9-4 9 4v6c0 5-4 9-9 9s-9-4-9-9V6z" />
-                <path d="M9 12l2 2 4-4" />
-              </svg>
+            {/* Generated Image Logo */}
+            <div className="relative w-9 h-9 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-200 overflow-hidden bg-white">
+              <Image 
+                src="/logo.png" 
+                alt="EraseImageBg Logo" 
+                width={36} 
+                height={36} 
+                className="object-cover"
+              />
             </div>
             <span className="text-xl font-800 tracking-tight">
               <span className="gradient-text font-extrabold">EraseImage</span>
