@@ -44,7 +44,7 @@ export async function generateMetadata({
       description: content.metaDescription,
     },
     alternates: {
-      canonical: `https://bgeraser.com/${slug}`,
+      canonical: `https://eraseimagebg.com/${slug}`,
     },
   };
 }

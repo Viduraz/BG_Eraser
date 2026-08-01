@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import LegalPageLayout from "@/components/LegalPageLayout";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — BgEraser",
+  title: "Terms of Service — EraseImageBg",
   description:
-    "BgEraser Terms of Service. Read the terms and conditions governing your use of our free AI background removal tool.",
+    "EraseImageBg Terms of Service. Read the terms and conditions governing your use of our free AI background removal tool.",
   robots: { index: true, follow: true },
 };
 
@@ -12,13 +12,13 @@ export default function TermsPage() {
   return (
     <LegalPageLayout
       title="Terms of Service"
-      subtitle="Please read these Terms of Service carefully before using BgEraser. By accessing or using our Service, you agree to be bound by these terms."
+      subtitle="Please read these Terms of Service carefully before using EraseImageBg. By accessing or using our Service, you agree to be bound by these terms."
       lastUpdated="1 August 2025"
     >
       {/* ── 1. Acceptance ─────────────────────────────────────────────── */}
       <h2>1. Acceptance of Terms</h2>
       <p>
-        By accessing or using <strong>BgEraser</strong> ("Service"), operated by BgEraser
+        By accessing or using <strong>EraseImageBg</strong> ("Service"), operated by EraseImageBg
         ("Company", "we", "us", "our"), you agree to be bound by these Terms of Service
         ("Terms"). If you disagree with any part of these Terms, you may not access the
         Service. These Terms apply to all visitors, users, and others who access or use
@@ -34,7 +34,7 @@ export default function TermsPage() {
       {/* ── 2. Description of Service ─────────────────────────────────── */}
       <h2>2. Description of Service</h2>
       <p>
-        BgEraser provides a free, web-based tool that uses artificial intelligence to
+        EraseImageBg provides a free, web-based tool that uses artificial intelligence to
         remove backgrounds from digital images ("Service"). The Service operates entirely
         within your web browser: your images are processed locally on your device using
         WebAssembly-compiled AI models and are not uploaded to any server operated by us.
@@ -52,7 +52,7 @@ export default function TermsPage() {
       {/* ── 3. Acceptable Use ─────────────────────────────────────────── */}
       <h2>3. Acceptable Use Policy</h2>
       <p>
-        You agree to use BgEraser only for lawful purposes and in a manner that does not
+        You agree to use EraseImageBg only for lawful purposes and in a manner that does not
         infringe the rights of others or restrict or inhibit anyone else's use and
         enjoyment of the Service. Specifically, you agree not to:
       </p>
@@ -100,7 +100,7 @@ export default function TermsPage() {
       <h3>4.1 Our Content</h3>
       <p>
         The Service and its original content (excluding user-provided images), features,
-        and functionality are and will remain the exclusive property of BgEraser and its
+        and functionality are and will remain the exclusive property of EraseImageBg and its
         licensors. Our trademarks, service marks, and trade dress may not be used in
         connection with any product or service without our prior written consent.
       </p>
@@ -120,7 +120,7 @@ export default function TermsPage() {
       </p>
       <h3>4.3 AI Models</h3>
       <p>
-        The AI models used by BgEraser are based on open-source research and are made
+        The AI models used by EraseImageBg are based on open-source research and are made
         available under their respective licences. By using the Service, you do not
         acquire any ownership rights in these models.
       </p>
@@ -185,7 +185,7 @@ export default function TermsPage() {
       {/* ── 8. Limitation of Liability ────────────────────────────────── */}
       <h2>8. Limitation of Liability</h2>
       <p>
-        To the maximum extent permitted by applicable law, in no event shall BgEraser,
+        To the maximum extent permitted by applicable law, in no event shall EraseImageBg,
         its directors, employees, partners, agents, suppliers, or affiliates be liable for
         any indirect, incidental, special, consequential, or punitive damages, including
         without limitation loss of profits, data, goodwill, or other intangible losses,
@@ -212,7 +212,7 @@ export default function TermsPage() {
       {/* ── 9. Indemnification ────────────────────────────────────────── */}
       <h2>9. Indemnification</h2>
       <p>
-        You agree to defend, indemnify, and hold harmless BgEraser and its affiliates,
+        You agree to defend, indemnify, and hold harmless EraseImageBg and its affiliates,
         licensors, and service providers from and against any claims, liabilities,
         damages, judgments, awards, losses, costs, expenses, or fees (including
         reasonable attorneys' fees) arising out of or relating to your violation of these
@@ -247,7 +247,7 @@ export default function TermsPage() {
         provision shall be limited or eliminated to the minimum extent necessary so that
         the Terms shall otherwise remain in full force and effect and enforceable. These
         Terms, together with our Privacy Policy, constitute the entire agreement between
-        you and BgEraser regarding the Service and supersede all prior agreements and
+        you and EraseImageBg regarding the Service and supersede all prior agreements and
         understandings.
       </p>
 
@@ -259,11 +259,11 @@ export default function TermsPage() {
       <ul>
         <li>
           <strong>Email:</strong>{" "}
-          <a href="mailto:legal@bgeraser.com">legal@bgeraser.com</a>
+          <a href="mailto:legal@eraseimagebg.com">legal@eraseimagebg.com</a>
         </li>
         <li>
           <strong>Website:</strong>{" "}
-          <a href="https://bgeraser.com/contact">bgeraser.com/contact</a>
+          <a href="https://eraseimagebg.com/contact">eraseimagebg.com/contact</a>
         </li>
       </ul>
     </LegalPageLayout>

@@ -75,7 +75,7 @@ const privacyBenefits = [
   {
     title: "Fully On-Device Processing",
     description:
-      "Unlike cloud-based tools that upload your images to remote servers in the US, Europe, or Asia, BgEraser runs the entire AI model inside your web browser using WebAssembly. Your image pixels never travel over the internet to any server we control. This design choice is not just a marketing promise — it is an architectural guarantee.",
+      "Unlike cloud-based tools that upload your images to remote servers in the US, Europe, or Asia, EraseImageBg runs the entire AI model inside your web browser using WebAssembly. Your image pixels never travel over the internet to any server we control. This design choice is not just a marketing promise — it is an architectural guarantee.",
     icon: "🔒",
   },
   {
@@ -93,13 +93,13 @@ const privacyBenefits = [
   {
     title: "No Watermarks, Ever",
     description:
-      "Many free background removal tools degrade your results with visible watermarks or logos unless you pay. We believe that is a dishonest practice. BgEraser is funded entirely by non-intrusive Google AdSense advertising, which means our tool is completely free with zero limitations on output quality, resolution, or watermarking — for everyone, forever.",
+      "Many free background removal tools degrade your results with visible watermarks or logos unless you pay. We believe that is a dishonest practice. EraseImageBg is funded entirely by non-intrusive Google AdSense advertising, which means our tool is completely free with zero limitations on output quality, resolution, or watermarking — for everyone, forever.",
     icon: "✨",
   },
   {
     title: "Works Offline (After First Load)",
     description:
-      "After your first visit, the AI model is cached in your browser. On subsequent visits, BgEraser works even without an internet connection. This makes it ideal for professionals working in environments with limited connectivity, or for anyone who values having a tool that truly belongs to them.",
+      "After your first visit, the AI model is cached in your browser. On subsequent visits, EraseImageBg works even without an internet connection. This makes it ideal for professionals working in environments with limited connectivity, or for anyone who values having a tool that truly belongs to them.",
     icon: "📶",
   },
   {
@@ -115,7 +115,7 @@ const useCases = [
   {
     title: "E-Commerce Product Photos",
     description:
-      "UK and US e-commerce sellers on Amazon, eBay, Etsy, and Shopify know that clean, white-background product images dramatically increase click-through rates and conversions. Professional photography studios charge £50–£200 per image. BgEraser lets you achieve the same results for free in seconds — giving small businesses a level playing field.",
+      "UK and US e-commerce sellers on Amazon, eBay, Etsy, and Shopify know that clean, white-background product images dramatically increase click-through rates and conversions. Professional photography studios charge £50–£200 per image. EraseImageBg lets you achieve the same results for free in seconds — giving small businesses a level playing field.",
   },
   {
     title: "Professional Headshots & LinkedIn",
@@ -125,12 +125,12 @@ const useCases = [
   {
     title: "Social Media & Content Creation",
     description:
-      "Content creators on Instagram, TikTok, YouTube, and Pinterest regularly need to cut out subjects for compositing, thumbnails, and creative graphics. BgEraser handles everything from portraits with complex hair to objects on cluttered backgrounds, giving creators professional results without Photoshop expertise or subscription costs.",
+      "Content creators on Instagram, TikTok, YouTube, and Pinterest regularly need to cut out subjects for compositing, thumbnails, and creative graphics. EraseImageBg handles everything from portraits with complex hair to objects on cluttered backgrounds, giving creators professional results without Photoshop expertise or subscription costs.",
   },
   {
     title: "Graphic Design & Marketing",
     description:
-      "Graphic designers and marketing teams frequently need transparent PNGs of products, people, and logos to assemble presentations, advertisements, and web graphics. BgEraser integrates seamlessly into creative workflows — just drag, drop, and download. Works alongside Canva, Figma, Adobe Express, and any other tool that accepts PNG files.",
+      "Graphic designers and marketing teams frequently need transparent PNGs of products, people, and logos to assemble presentations, advertisements, and web graphics. EraseImageBg integrates seamlessly into creative workflows — just drag, drop, and download. Works alongside Canva, Figma, Adobe Express, and any other tool that accepts PNG files.",
   },
 ];
 
@@ -262,7 +262,7 @@ export default function HomePage() {
               How Our AI Background Remover Works
             </h2>
             <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
-              Understanding the technology behind BgEraser helps you use it more
+              Understanding the technology behind EraseImageBg helps you use it more
               effectively and trust the privacy guarantees we make. Here is a detailed,
               step-by-step breakdown of what happens when you process an image.
             </p>
@@ -362,7 +362,7 @@ export default function HomePage() {
             </h2>
             <p className="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
               There are dozens of background removal tools online. Here is an honest,
-              detailed explanation of why we built BgEraser differently — and why that
+              detailed explanation of why we built EraseImageBg differently — and why that
               difference matters to you.
             </p>
           </div>
@@ -386,7 +386,7 @@ export default function HomePage() {
           {/* Use cases */}
           <div className="mt-14">
             <h3 className="text-2xl md:text-3xl font-bold text-slate-800 dark:text-white mb-8 text-center">
-              Who Uses BgEraser? Real-World Use Cases
+              Who Uses EraseImageBg? Real-World Use Cases
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {useCases.map(({ title, description }) => (
@@ -422,14 +422,14 @@ export default function HomePage() {
           {/* Comparison table */}
           <div className="mt-14">
             <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-6 text-center">
-              BgEraser vs Other Background Removal Tools
+              EraseImageBg vs Other Background Removal Tools
             </h3>
             <div className="overflow-x-auto rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
               <table className="w-full text-sm text-left bg-white dark:bg-slate-800">
                 <thead>
                   <tr className="border-b border-slate-100 dark:border-slate-700">
                     <th className="px-6 py-4 font-semibold text-slate-700 dark:text-slate-200 bg-slate-50 dark:bg-slate-900/50">Feature</th>
-                    <th className="px-6 py-4 font-semibold text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-900/20 text-center">BgEraser ✓</th>
+                    <th className="px-6 py-4 font-semibold text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-900/20 text-center">EraseImageBg ✓</th>
                     <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 text-center">Cloud Tools</th>
                     <th className="px-6 py-4 font-semibold text-slate-500 dark:text-slate-400 text-center">Desktop Apps</th>
                   </tr>
@@ -443,10 +443,10 @@ export default function HomePage() {
                     ["Works in browser", "✅ Yes", "✅ Yes", "❌ Install required"],
                     ["Handles complex hair", "✅ AI-powered", "✅ AI-powered", "⚠️ Varies"],
                     ["GDPR / CCPA compliant", "✅ By design", "⚠️ Depends on policy", "✅ Generally"],
-                  ].map(([feature, bgeraser, cloud, desktop]) => (
+                  ].map(([feature, eraseimagebg, cloud, desktop]) => (
                     <tr key={feature} className="hover:bg-slate-50/50 dark:hover:bg-slate-700/30 transition-colors">
                       <td className="px-6 py-3.5 font-medium text-slate-700 dark:text-slate-200">{feature}</td>
-                      <td className="px-6 py-3.5 text-center text-slate-700 dark:text-brand-300 bg-brand-50/30 dark:bg-brand-900/10">{bgeraser}</td>
+                      <td className="px-6 py-3.5 text-center text-slate-700 dark:text-brand-300 bg-brand-50/30 dark:bg-brand-900/10">{eraseimagebg}</td>
                       <td className="px-6 py-3.5 text-center text-slate-500 dark:text-slate-400">{cloud}</td>
                       <td className="px-6 py-3.5 text-center text-slate-500 dark:text-slate-400">{desktop}</td>
                     </tr>

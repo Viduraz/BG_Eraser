@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact & About Us — BgEraser",
+  title: "Contact & About Us — EraseImageBg",
   description:
-    "Contact the BgEraser team and learn about our mission to build privacy-first, browser-based AI tools for professionals in the US and UK. No data collection, no servers — just powerful tools that respect your privacy.",
+    "Contact the EraseImageBg team and learn about our mission to build privacy-first, browser-based AI tools for professionals in the US and UK. No data collection, no servers — just powerful tools that respect your privacy.",
   robots: { index: true, follow: true },
 };
 
 // ── FAQ data ───────────────────────────────────────────────────────────────
 const faqs = [
   {
-    q: "Is BgEraser really free?",
-    a: "Yes, completely. BgEraser is funded by non-intrusive Google AdSense advertisements. There are no hidden tiers, no subscription plans, and no watermarks on any output image — for any user, at any time.",
+    q: "Is EraseImageBg really free?",
+    a: "Yes, completely. EraseImageBg is funded by non-intrusive Google AdSense advertisements. There are no hidden tiers, no subscription plans, and no watermarks on any output image — for any user, at any time.",
   },
   {
     q: "Do you store my images?",
@@ -19,19 +19,19 @@ const faqs = [
   },
   {
     q: "How accurate is the background removal?",
-    a: "BgEraser uses a high-quality ONNX neural network model trained on millions of images. It handles complex subjects including portrait hair, fur, product edges, and reflective surfaces. Results are comparable to professional tools like remove.bg and Photoshop's Subject Selection.",
+    a: "EraseImageBg uses a high-quality ONNX neural network model trained on millions of images. It handles complex subjects including portrait hair, fur, product edges, and reflective surfaces. Results are comparable to professional tools like remove.bg and Photoshop's Subject Selection.",
   },
   {
-    q: "Can I use BgEraser for commercial projects?",
-    a: "Yes. There are no restrictions on the commercial use of images you produce using BgEraser. You own your output images completely.",
+    q: "Can I use EraseImageBg for commercial projects?",
+    a: "Yes. There are no restrictions on the commercial use of images you produce using EraseImageBg. You own your output images completely.",
   },
   {
     q: "Why is the first processing session slower than subsequent ones?",
-    a: "On your first visit, BgEraser downloads the AI model files (~50–80 MB) from a CDN and caches them in your browser. On subsequent visits, the cached model is used immediately — making the tool near-instant and even usable offline.",
+    a: "On your first visit, EraseImageBg downloads the AI model files (~50–80 MB) from a CDN and caches them in your browser. On subsequent visits, the cached model is used immediately — making the tool near-instant and even usable offline.",
   },
   {
-    q: "Does BgEraser work on mobile devices?",
-    a: "Yes. BgEraser works on modern iOS and Android browsers (Chrome, Safari, Firefox). Performance may be slower on older or lower-powered devices due to the computational intensity of running an AI model in the browser.",
+    q: "Does EraseImageBg work on mobile devices?",
+    a: "Yes. EraseImageBg works on modern iOS and Android browsers (Chrome, Safari, Firefox). Performance may be slower on older or lower-powered devices due to the computational intensity of running an AI model in the browser.",
   },
 ];
 
@@ -59,7 +59,7 @@ const values = [
     icon: "⚡",
     title: "Performance without Compromise",
     description:
-      "On-device AI should not mean slow AI. We invest in model optimisation and WebAssembly compilation to ensure BgEraser is fast enough for real-world professional workflows.",
+      "On-device AI should not mean slow AI. We invest in model optimisation and WebAssembly compilation to ensure EraseImageBg is fast enough for real-world professional workflows.",
   },
 ];
 
@@ -71,14 +71,14 @@ export default function ContactPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="inline-block text-xs font-semibold tracking-widest uppercase text-brand-600 mb-4">
-              About BgEraser
+              About EraseImageBg
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
               We Build AI Tools That{" "}
               <span className="gradient-text">Respect Your Privacy</span>
             </h1>
             <p className="text-base md:text-lg text-slate-500 dark:text-slate-400 leading-relaxed">
-              BgEraser is on a mission to make professional-grade AI tools accessible to
+              EraseImageBg is on a mission to make professional-grade AI tools accessible to
               everyone, without compromising the privacy or security of the people who
               use them. We believe you should not have to choose between a powerful tool
               and one that respects your data.
@@ -113,7 +113,7 @@ export default function ContactPage() {
           ">
             <h2>Our Story and Mission</h2>
             <p>
-              BgEraser was founded on a straightforward observation: almost every
+              EraseImageBg was founded on a straightforward observation: almost every
               professional AI background removal tool available online requires you to
               upload your photos to a third-party server. Your product shots, your
               passport photo, your agent headshot — they all travel over the internet to
@@ -126,7 +126,7 @@ export default function ContactPage() {
               Using WebAssembly — a binary instruction format that runs at near-native
               speed in any browser — and ONNX Runtime Web, it is now possible to run
               professional-grade AI models entirely within the browser tab, with no
-              server-side processing whatsoever. We built BgEraser on this foundation.
+              server-side processing whatsoever. We built EraseImageBg on this foundation.
               The result is a tool that is simultaneously more private, more accessible
               (no account required), and faster (no round-trip network latency) than
               cloud-based alternatives.
@@ -147,7 +147,7 @@ export default function ContactPage() {
               valuable, we would love to hear from you.
             </p>
 
-            <h2>Who Uses BgEraser?</h2>
+            <h2>Who Uses EraseImageBg?</h2>
             <p>
               Our users span a wide range of professional and personal use cases across
               the United States and United Kingdom:
@@ -185,7 +185,7 @@ export default function ContactPage() {
 
             <h2>Our Commitment to AdSense Compliance</h2>
             <p>
-              We are transparent about how BgEraser is funded. We display advertisements
+              We are transparent about how EraseImageBg is funded. We display advertisements
               from Google AdSense, which allows us to offer the Service completely free
               of charge. We have designed our website to comply fully with Google
               AdSense's programme policies, including providing clear disclosure of our
@@ -220,7 +220,7 @@ export default function ContactPage() {
                 id="contact-heading"
                 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4"
               >
-                Contact the BgEraser Team
+                Contact the EraseImageBg Team
               </h2>
               <p className="text-slate-500 dark:text-slate-400 leading-relaxed mb-8">
                 We are a small team and we read every message. Whether you have a
@@ -315,7 +315,7 @@ export default function ContactPage() {
                 aria-label="Contact form"
               >
                 {/* Hidden field to set the email subject line */}
-                <input type="hidden" name="_subject" value="New Contact Form Submission - BgEraser" />
+                <input type="hidden" name="_subject" value="New Contact Form Submission - EraseImageBg" />
                 
                 {/* (Optional) Hidden field to disable recaptcha if you want a frictionless experience, 
                     but we leave it on by default to prevent spam.

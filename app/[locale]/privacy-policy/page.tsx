@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import LegalPageLayout from "@/components/LegalPageLayout";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — BgEraser",
+  title: "Privacy Policy — EraseImageBg",
   description:
-    "BgEraser's Privacy Policy. Learn how we handle your data, how Google AdSense advertising works on our site, our use of the DoubleClick DART cookie, and our commitment to processing all images locally in your browser.",
+    "EraseImageBg's Privacy Policy. Learn how we handle your data, how Google AdSense advertising works on our site, our use of the DoubleClick DART cookie, and our commitment to processing all images locally in your browser.",
   robots: { index: true, follow: true },
 };
 
@@ -18,9 +18,9 @@ export default function PrivacyPolicyPage() {
       {/* ── 1. Introduction ──────────────────────────────────────────── */}
       <h2>1. Introduction and Who We Are</h2>
       <p>
-        Welcome to <strong>BgEraser</strong> ("we", "us", "our"), a free, browser-based
+        Welcome to <strong>EraseImageBg</strong> ("we", "us", "our"), a free, browser-based
         AI background removal tool available at{" "}
-        <a href="https://bgeraser.com">bgeraser.com</a> (the "Service"). We are committed
+        <a href="https://eraseimagebg.com">eraseimagebg.com</a> (the "Service"). We are committed
         to protecting your personal information and your right to privacy. This Privacy
         Policy explains what information we collect when you visit our website, how we use
         it, and what rights you have in relation to it.
@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
       <p>
         If you have any questions or concerns about this policy or our practices with
         regard to your personal information, please contact us at{" "}
-        <a href="mailto:privacy@bgeraser.com">privacy@bgeraser.com</a>.
+        <a href="mailto:privacy@eraseimagebg.com">privacy@eraseimagebg.com</a>.
       </p>
       <p>
         Please read this policy carefully, as it will help you understand what we do with
@@ -45,7 +45,7 @@ export default function PrivacyPolicyPage() {
         </strong>
       </p>
       <p>
-        BgEraser's background removal technology operates entirely within your web
+        EraseImageBg's background removal technology operates entirely within your web
         browser using WebAssembly (WASM) and ONNX Runtime Web. When you upload an image
         to our tool, the following happens:
       </p>
@@ -81,7 +81,7 @@ export default function PrivacyPolicyPage() {
         This architecture is not merely a policy commitment — it is a technical guarantee.
         You can verify this independently by opening your browser's Developer Tools
         (F12), navigating to the "Network" tab, and observing that no image data is
-        transmitted when you process a photo using BgEraser. The only network requests
+        transmitted when you process a photo using EraseImageBg. The only network requests
         made during tool usage are the one-time downloads of the AI model files (WASM and
         ONNX), which contain no user data.
       </p>
@@ -139,7 +139,7 @@ export default function PrivacyPolicyPage() {
       {/* ── 4. Google AdSense & DoubleClick ──────────────────────────── */}
       <h2>4. Google AdSense Advertising and the DoubleClick DART Cookie</h2>
       <p>
-        BgEraser is a free service funded by advertising revenue. We use{" "}
+        EraseImageBg is a free service funded by advertising revenue. We use{" "}
         <strong>Google AdSense</strong>, a third-party advertising service operated by
         Google LLC, to display advertisements on our website. Google AdSense uses
         advertising cookies to serve ads based on a user's prior visits to our website
@@ -149,7 +149,7 @@ export default function PrivacyPolicyPage() {
       <p>
         Google, as a third-party vendor, uses the{" "}
         <strong>DoubleClick DART cookie</strong> to serve ads to users based on their
-        visit to BgEraser and other websites on the internet. The DART cookie is set by
+        visit to EraseImageBg and other websites on the internet. The DART cookie is set by
         Google's DoubleClick ad-serving platform, which is the underlying technology that
         powers Google AdSense ad delivery.
       </p>
@@ -219,14 +219,14 @@ export default function PrivacyPolicyPage() {
       {/* ── 5. AI Model Data ─────────────────────────────────────────── */}
       <h2>5. AI Model Downloads and Caching</h2>
       <p>
-        To perform background removal in your browser, BgEraser downloads AI model files
+        To perform background removal in your browser, EraseImageBg downloads AI model files
         (in ONNX format) from a content delivery network (CDN) on your first visit. These
         files contain model weights — numerical parameters that define the neural network
         — and contain no user data whatsoever.
       </p>
       <p>
         After the initial download, these model files are cached in your browser's local
-        cache. On subsequent visits, BgEraser uses the cached model files rather than
+        cache. On subsequent visits, EraseImageBg uses the cached model files rather than
         downloading them again, which also means the tool functions offline after the
         first use. You can clear these cached files by clearing your browser's cache and
         cookies in the usual way.
@@ -249,11 +249,11 @@ export default function PrivacyPolicyPage() {
         <li>Withdraw consent at any time where we relied on consent to process your data.</li>
       </ul>
       <p>
-        Please note that because BgEraser processes no personally identifiable information
+        Please note that because EraseImageBg processes no personally identifiable information
         beyond standard web server logs (which are not linked to any individual identity),
         there is very limited personal data for us to action. To exercise any of these
         rights, please contact us at{" "}
-        <a href="mailto:privacy@bgeraser.com">privacy@bgeraser.com</a>.
+        <a href="mailto:privacy@eraseimagebg.com">privacy@eraseimagebg.com</a>.
       </p>
 
       {/* ── 7. CCPA Rights ───────────────────────────────────────────── */}
@@ -263,9 +263,9 @@ export default function PrivacyPolicyPage() {
         grants you specific rights regarding your personal information. You have the right
         to know what personal information we collect about you, the right to request
         deletion of your personal information, and the right to opt out of the sale of
-        your personal information. BgEraser does not sell personal information to third
+        your personal information. EraseImageBg does not sell personal information to third
         parties. To exercise your CCPA rights, contact us at{" "}
-        <a href="mailto:privacy@bgeraser.com">privacy@bgeraser.com</a>.
+        <a href="mailto:privacy@eraseimagebg.com">privacy@eraseimagebg.com</a>.
       </p>
 
       {/* ── 8. Data Retention ─────────────────────────────────────────── */}
@@ -280,11 +280,11 @@ export default function PrivacyPolicyPage() {
       {/* ── 9. Children ───────────────────────────────────────────────── */}
       <h2>9. Children's Privacy</h2>
       <p>
-        BgEraser is not directed to children under the age of 13 in the United States, or
+        EraseImageBg is not directed to children under the age of 13 in the United States, or
         under 16 in the United Kingdom and European Union. We do not knowingly collect
         personal information from children. If you believe we have inadvertently collected
         information from a child, please contact us immediately at{" "}
-        <a href="mailto:privacy@bgeraser.com">privacy@bgeraser.com</a>.
+        <a href="mailto:privacy@eraseimagebg.com">privacy@eraseimagebg.com</a>.
       </p>
 
       {/* ── 10. Third-Party Links ─────────────────────────────────────── */}
@@ -303,7 +303,7 @@ export default function PrivacyPolicyPage() {
         practices or for other operational, legal, or regulatory reasons. We will notify
         you of any significant changes by updating the "Last updated" date at the top of
         this page. We encourage you to review this Policy periodically. Your continued use
-        of BgEraser after any changes constitutes your acceptance of the updated Policy.
+        of EraseImageBg after any changes constitutes your acceptance of the updated Policy.
       </p>
 
       {/* ── 12. Contact ───────────────────────────────────────────────── */}
@@ -315,11 +315,11 @@ export default function PrivacyPolicyPage() {
       <ul>
         <li>
           <strong>Email:</strong>{" "}
-          <a href="mailto:privacy@bgeraser.com">privacy@bgeraser.com</a>
+          <a href="mailto:privacy@eraseimagebg.com">privacy@eraseimagebg.com</a>
         </li>
         <li>
           <strong>Website:</strong>{" "}
-          <a href="https://bgeraser.com/contact">bgeraser.com/contact</a>
+          <a href="https://eraseimagebg.com/contact">eraseimagebg.com/contact</a>
         </li>
       </ul>
     </LegalPageLayout>

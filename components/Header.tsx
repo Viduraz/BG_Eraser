@@ -35,7 +35,7 @@ export default function Header() {
           <Link
             href="/"
             className="flex items-center gap-2.5 group flex-shrink-0"
-            aria-label="BgEraser Home"
+            aria-label="EraseImageBg Home"
           >
             {/* SVG Logo Mark */}
             <div className="relative w-9 h-9 rounded-xl gradient-brand flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-200">

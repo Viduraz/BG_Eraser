@@ -20,8 +20,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "BgEraser – Free AI Background Remover | Instant & Private",
-    template: "%s | BgEraser",
+    default: "EraseImageBg – Free AI Background Remover | Instant & Private",
+    template: "%s | EraseImageBg",
   },
   description:
     "Remove image backgrounds instantly with our free AI-powered tool. 100% private — processing happens in your browser. No upload, no account, no watermark. Perfect for e-commerce, design, and social media.",
@@ -36,20 +36,20 @@ export const metadata: Metadata = {
     "background remover UK",
     "background remover US",
   ],
-  authors: [{ name: "BgEraser" }],
-  creator: "BgEraser",
+  authors: [{ name: "EraseImageBg" }],
+  creator: "EraseImageBg",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://bgeraser.com",
-    siteName: "BgEraser",
-    title: "BgEraser – Free AI Background Remover",
+    url: "https://eraseimagebg.com",
+    siteName: "EraseImageBg",
+    title: "EraseImageBg – Free AI Background Remover",
     description:
       "Instantly remove image backgrounds with AI. 100% private browser-based processing. No sign-up required.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "BgEraser – Free AI Background Remover",
+    title: "EraseImageBg – Free AI Background Remover",
     description: "Remove backgrounds instantly. Free, private, no watermark.",
   },
   robots: {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
-  metadataBase: new URL("https://bgeraser.com"),
+  metadataBase: new URL("https://eraseimagebg.com"),
 };
 
 // ── AdSense publisher ID ───────────────────────────────────────────────────

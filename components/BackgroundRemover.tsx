@@ -123,7 +123,7 @@ function classifyError(err: unknown): AppError {
     return {
       title: "Failed to download AI model",
       body:
-        "BgEraser could not download the AI model files. " +
+        "EraseImageBg could not download the AI model files. " +
         "Please check your internet connection and try again. " +
         "Once downloaded, the model is cached and no further downloads are needed.",
       technical: raw,
@@ -436,7 +436,7 @@ export default function BackgroundRemover() {
 
       setStage("done");
     } catch (err) {
-      console.error("[BgEraser] Processing error:", err);
+      console.error("[EraseImageBg] Processing error:", err);
       setAppError(classifyError(err));
       setStage("error");
     }

@@ -1,14 +1,14 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/imgly/background-removal-js/main/assets/hero.jpg" alt="Background Removal Hero" width="100%" />
 
-  <h1>BgEraser — Private AI Background Removal</h1>
+  <h1>EraseImageBg — Private AI Background Removal</h1>
   
   <p>
     <strong>A lightning-fast, 100% private, client-side background removal tool built with Next.js 14.</strong>
   </p>
 
   <p>
-    <a href="https://bgeraser.com">Live Demo</a> •
+    <a href="https://eraseimagebg.com">Live Demo</a> •
     <a href="#features">Features</a> •
     <a href="#getting-started">Getting Started</a> •
     <a href="#monetization--seo">Monetization</a>
@@ -17,9 +17,9 @@
 
 ---
 
-## ⚡ Why BgEraser?
+## ⚡ Why EraseImageBg?
 
-Unlike traditional background removal APIs that charge per image and require uploading user photos to a remote server, **BgEraser runs entirely in the browser**. 
+Unlike traditional background removal APIs that charge per image and require uploading user photos to a remote server, **EraseImageBg runs entirely in the browser**. 
 
 Powered by WebAssembly (WASM) and ONNX models via [`@imgly/background-removal`](https://github.com/imgly/background-removal-js), it delivers production-grade image matting locally on the user's device. 
 

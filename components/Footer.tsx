@@ -63,7 +63,7 @@ export default function Footer() {
                   <path d="M9 12l2 2 4-4" />
                 </svg>
               </div>
-              <span className="text-lg font-bold text-white">BgEraser</span>
+              <span className="text-lg font-bold text-white">EraseImageBg</span>
             </Link>
             <p className="text-sm leading-relaxed text-slate-400 mb-4">
               Free, private AI background removal. No uploads, no accounts, no watermarks. 
@@ -116,7 +116,7 @@ export default function Footer() {
       <div className="border-t border-slate-800 dark:border-slate-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-slate-500">
-            © {currentYear} BgEraser. All rights reserved. Made with ❤️ for privacy.
+            © {currentYear} EraseImageBg. All rights reserved. Made with ❤️ for privacy.
           </p>
           <div className="flex gap-5 text-xs">
             <Link href="/privacy-policy" className="text-slate-500 hover:text-slate-300 transition-colors">
