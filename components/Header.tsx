@@ -54,8 +54,8 @@ export default function Header() {
               </svg>
             </div>
             <span className="text-xl font-800 tracking-tight">
-              <span className="gradient-text font-extrabold">Bg</span>
-              <span className="text-slate-800 dark:text-white font-bold">Eraser</span>
+              <span className="gradient-text font-extrabold">EraseImage</span>
+              <span className="text-slate-800 dark:text-white font-bold">Bg</span>
             </span>
           </Link>
 
